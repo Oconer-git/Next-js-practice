@@ -1,11 +1,11 @@
 import React from 'react'
 
-const newUserPage = () => {
+const page = () => {
   return (
     <div>
-    newUserPage
+      NewUserPage
     </div>
   )
 }
 
-export default newUserPage
+export default page
