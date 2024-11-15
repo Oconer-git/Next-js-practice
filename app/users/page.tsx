@@ -5,7 +5,7 @@ interface Props{
   searchParams: {sortOrder: string}
 }
 
-const UsersPage = ({searchParams: {sortOrder}}: Props) => {
+const UsersPage = async ({searchParams: {sortOrder}}: Props) => {
 
   return (
     <div>

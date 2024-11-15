@@ -1,16 +1,14 @@
+import React from 'react'
 
-interface Props{
-    params: {slug: string[]},
-    searchParams: {sortOrder: string}
+interface Props {
+    params: {slug: string[]}
+}
+const ProductDetailPage = ({params: {slug}}: Props) => {
+  return (
+    <div>
+      Product Detail Page {slug}
+    </div>
+  )
 }
 
-const ProductDetailPage = ({params: {slug}, searchParams:{sortOrder}}: Props) => {
-    return (
-        <>
-            <div>Product Detail Page {slug}</div>
-            <div>sortOrder: {sortOrder}</div>
-        </>
-    )
-}
-
-export default ProductDetailPage    
+export default ProductDetailPage
