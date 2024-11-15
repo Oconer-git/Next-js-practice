@@ -10,7 +10,6 @@ const UsersPage = ({searchParams: {sortOrder}}: Props) => {
   return (
     <div>
       <h1>Users</h1>
-      <p>{new Date().toLocaleTimeString()}</p>
       <UserTable sortOrder={sortOrder}/>
     </div>
   )
