@@ -19,7 +19,6 @@ export async function POST(request: NextRequest) {
     const emailExists = await prisma.user.findUnique({
         where: {email: validatedBody.email}
     })
-
     if(emailExists)
         return NextResponse.json({error: 'email aready exsits'}, {status: 400})
 
