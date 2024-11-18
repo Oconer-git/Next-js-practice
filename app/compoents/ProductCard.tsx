@@ -4,7 +4,7 @@ import styles from './ProductCard.module.css'
 
 const ProductCard = () => {
   return (
-    <div className="bg-gray-300">
+    <div>
       <AddToCart/>
     </div>
   )
