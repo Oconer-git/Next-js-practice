@@ -1,11 +1,8 @@
 'use client'
-import { useState } from 'react'
 import Link from 'next/link'
 import _ from 'lodash'
-import dynamic from 'next/dynamic'
 
 export default function Home() {
-  const [visible, setVisible] = useState(false)
 
   return (
     <main className="relative h-screen">
