@@ -7,7 +7,7 @@ const NavBar = () => {
     const {status, data: session} = useSession();
 
     return (
-        <div className="flex bg-slate-200 p-5 space-x-3">
+        <div className="flex bg-slate-200 p-5 space-x-3 font-clouts" >
             <Link href="/" className="mr-5">Next.js</Link>
             <Link href="/users">Users</Link>
             { status === 'loading' ? <div> loading... </div> : '' }

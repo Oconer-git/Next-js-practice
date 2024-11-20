@@ -1,8 +1,5 @@
-import Link from 'next/link'
-import ProductCard from './compoents/ProductCard'
 import { getServerSession } from 'next-auth'
 import { authOptions } from './api/auth/[...nextauth]/route'
-import profile from '@/public/images/profile.jpg'
 import Image from 'next/image'
 
 export default async function Home() {
