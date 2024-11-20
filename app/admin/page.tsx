@@ -1,3 +1,4 @@
+import { Metadata } from "next"
 
 const AdminHomePage = () => {
     return (
@@ -6,3 +7,8 @@ const AdminHomePage = () => {
 }
 
 export default AdminHomePage
+
+export const metadata: Metadata = {
+    title: 'tite',
+    description: 'tite description'
+}
