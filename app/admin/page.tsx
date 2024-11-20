@@ -9,6 +9,6 @@ const AdminHomePage = () => {
 export default AdminHomePage
 
 export const metadata: Metadata = {
-    title: 'tite',
-    description: 'tite description'
+    title: 'something',
+    description: 'something description'
 }

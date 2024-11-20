@@ -1,23 +1,21 @@
-import { getServerSession } from 'next-auth'
-import { authOptions } from './api/auth/[...nextauth]/route'
-import Image from 'next/image'
+'use client'
+import { useState } from 'react'
+import Link from 'next/link'
+import _ from 'lodash'
+import dynamic from 'next/dynamic'
 
-export default async function Home() {
-  const session = await getServerSession(authOptions)
+export default function Home() {
+  const [visible, setVisible] = useState(false)
+
   return (
     <main className="relative h-screen">
-      {/* <h1>Hello {session && <span>{session.user!.name}</span>}</h1>
       <Link href="/users"> Users </Link>
-      <ProductCard/> */}
-      <Image 
-        src="https://bit.ly/react-cover"
-        alt='profile'
-        fill
-        className="object-cover"
-        sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 33vw"
-        quality={100}
-        priority
-      />
+      <button onClick={async () => {
+        const x = (await import('lodash')).default  
+        const users = [{name: 'a'}, {name: 'c'}, {name: 'b'}];
+        const sorted = x.orderBy(users, ['name']);
+        console.log(sorted);
+      }} className="btn btn-primary">Render</button>
     </main>
   )
 }
